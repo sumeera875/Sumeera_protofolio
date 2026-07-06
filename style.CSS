@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#111827;
+    position:fixed;
+    width:100%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:150px 10%;
+}
+
+.content{
+    width:55%;
+}
+
+.content h1{
+    font-size:50px;
+}
+
+.content span{
+    color:#38bdf8;
+}
+
+.content h2{
+    color:#94a3b8;
+    margin:15px 0;
+}
+
+.content p{
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#38bdf8;
+    color:white;
+    padding:12px 28px;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+.image img{
+    width:320px;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.card,.box{
+    background:#1e293b;
+    padding:25px;
+    margin:20px 0;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover,
+.box:hover{
+    transform:translateY(-8px);
+}
+
+.skill{
+    margin-bottom:20px;
+}
+
+.bar{
+    background:#334155;
+    height:10px;
+    border-radius:20px;
+}
+
+.bar div{
+    height:100%;
+    border-radius:20px;
+    background:#38bdf8;
+}
+
+.python{width:90%;}
+.c{width:75%;}
+.html{width:80%;}
+.css{width:75%;}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.contact-box{
+    text-align:center;
+    line-height:2;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#111827;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.content{
+    width:100%;
+}
+
+.image img{
+    width:250px;
+    margin-top:30px;
+}
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:inline-block;
+    margin:10px;
+}
+
+  }
